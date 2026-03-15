@@ -1,6 +1,11 @@
 # Repo Migrate Bitbucket To Github
 
-This script automates the migration of Git repositories from Bitbucket to GitHub using the GitHub CLI (`gh`).
+This script automates the migration of Git repositories from Bitbucket to GitHub using the GitHub CLI (`gh`). It automatically handles the creation of the target repository on GitHub.
+
+## Features
+- **Automatic Creation**: If the repository does not exist on GitHub, the script will create it as a private repository.
+- **Forced Re-creation**: Using the `--force` flag, you can delete the existing GitHub repository and recreate it from scratch.
+- **Mirror Migration**: Performs a full mirror push, including all branches and tags.
 
 ## Requirements
 - Python 3
